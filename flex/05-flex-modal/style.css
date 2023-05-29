@@ -12,14 +12,25 @@ body {
   /* I'll give you this one for free lol */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;'
 }
+
+/* div {
+  border: 1px black solid;
+} */
 
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
+  padding: 16px;  
 }
 
 .icon {
@@ -31,8 +42,10 @@ body {
   height: 42px;
   border-radius: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-shrink:0;
 }
 
 .close-button {
@@ -47,13 +60,36 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid #eee;
-  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex:1;
+}
+
+div > .close-button{
+  margin-left: auto;
+}
+.header {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.text {
+  margin-bottom: 5px;
 }
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  margin: 2px;
+  padding:5px 15px;
 }
 
 button.continue {
